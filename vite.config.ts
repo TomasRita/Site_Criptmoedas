@@ -8,5 +8,5 @@ export default defineConfig({
   //   port:3003,
   //   //host:'0.0.0.0',
   // },
-  base: '/Site_criptmoedas/'
+  base: '/Site_Criptmoedas/'
 })

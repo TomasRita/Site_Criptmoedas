@@ -23,7 +23,7 @@ function App() {
    return () => clearTimeout(timer);
 
   }
-  const isNotFoundPage = location.pathname === '/Site_criptmoedas/'; 
+  const isNotFoundPage = location.pathname === '/Site_Criptmoedas/'; 
 
   return (
     <>

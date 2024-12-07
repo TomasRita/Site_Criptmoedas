@@ -80,7 +80,7 @@ const Header = ({setLoadingTrue}:HeaderProps)=>{
     
           {!isMobile && (
             <Link
-              to="/Site_criptmoedas/"
+              to="/Site_Criptmoedas/"
               className="bg-[#915AC0] text-white py-2 px-6 rounded-3xl hover:bg-purple-700"
               style={{ fontWeight: 300 }}
               onClick={setLoadingTrue}
@@ -141,7 +141,7 @@ const Header = ({setLoadingTrue}:HeaderProps)=>{
                 About Us
               </a>
               <Link
-                to="/Site_criptmoedas/"
+                to="/Site_Criptmoedas/"
                 className="bg-[#915AC0] text-white py-2 px-8 rounded-3xl hover:bg-purple-700"
                 onClick={() => {
                   setLoadingTrue();
