@@ -43,7 +43,7 @@ const Header = ({setLoadingTrue}:HeaderProps)=>{
       >
         <div className="flex items-center justify-between px-6 py-2 lg:max-w-7xl mx-auto border-b border-[#ffffff33] ">
           {/* LOGO */}
-          <Link to="/">
+          <Link to="/Site_Criptmoedas/#">
             <img src={logo} alt="Logo" className="w-32 md:w-48" />
           </Link>
     
@@ -53,25 +53,25 @@ const Header = ({setLoadingTrue}:HeaderProps)=>{
             style={{ fontWeight: 300 }}
           >
             <a
-              href="/#"
+              href="/Site_Criptmoedas/#"
               className="relative text-white hover:text-[#915AC0] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#915AC0] after:-bottom-1 after:left-0"
             >
               Home
             </a>
             <a
-              href="/#Pricing"
+              href="/Site_Criptmoedas/#Pricing"
               className="relative text-white hover:text-[#915AC0]"
             >
               Pricing
             </a>
             <a
-              href="/#Product"
+              href="/Site_Criptmoedas/#Product"
                 className="relative text-white hover:text-[#915AC0]"
             >
               Product
             </a>
             <a
-              href="/#About_Us"
+              href="/Site_Criptmoedas/#About_Us"
                 className="relative text-white hover:text-[#915AC0]"
             >
               About Us
@@ -113,28 +113,28 @@ const Header = ({setLoadingTrue}:HeaderProps)=>{
               style={{ fontWeight: 300 }}
             >
           <a
-            href="/#"
+            href="/Site_Criptmoedas/#"
             className="text-white text-xl mb-4 hover:text-[#915AC0] relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#915AC0] after:-bottom-1 after:left-0"
           >
             Home
           </a>
 
               <a
-                href="/#Pricing"
+                href="/Site_Criptmoedas/#Pricing"
                 className="text-white text-xl mb-4 hover:text-[#915AC0]"
         
               >
                 Pricing
               </a>
               <a
-                href="/#Product"
+                href="/Site_Criptmoedas/#Product"
                 className="text-white text-xl mb-4 hover:text-[#915AC0]"
                
               >
                 Product
               </a>
               <a
-                href="/#About_Us"
+                href="/Site_Criptmoedas/#About_Us"
                 className="text-white text-xl mb-4 hover:text-[#915AC0]"
         
               >
