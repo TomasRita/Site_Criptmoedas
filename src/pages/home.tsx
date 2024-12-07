@@ -476,9 +476,9 @@ const Home = () => {
 
        </div>
               
-      </section>
+       </section>
 
-      <section id="About_Us" className="relative flex flex-wrap  justify-evenly bg-black  w-full md:mt-60 space-y-8">
+       <section id="About_Us" className="relative flex flex-wrap  justify-evenly bg-black  w-full md:mt-60 space-y-8">
         {/* Conteúdo principal */}
         <motion.div
           className="text-center space-y-4 relative z-10"
@@ -518,9 +518,9 @@ const Home = () => {
           <div className="absolute md:right-[25em] -bottom-10 rounded-full w-36 h-44 bg-purple-600/20 blur-3xl"></div>
           <div className="absolute md:right-[25em] -bottom-10 rounded-full w-36 h-44 bg-purple-600/20 blur-3xl"></div>
         </div>
-      </section> 
+       </section> 
 
-      <section className="relative flex flex-wrap  justify-evenly bg-black  w-full md:my-48 my-24 md:px-32">
+       <section className="relative flex flex-wrap  justify-evenly bg-black  w-full md:my-48 my-24 md:px-32">
         {/* Conteúdo principal */}
         <div className="bg-white/10 backdrop-blur-lg relative rounded-2xl flex justify-center  w-full  items-center py-12 p-4">
         <motion.div
@@ -547,10 +547,10 @@ const Home = () => {
 
         </motion.div>
         </div>
-      </section> 
+       </section> 
 
-      {/* Botão de Voltar ao Topo*/}
-      {showScrollButton && (
+       {/* Botão de Voltar ao Topo*/}
+       {showScrollButton && (
         <div className="fixed bottom-5 right-5 z-40">
           <button
             onClick={scrollToTop}
@@ -560,7 +560,7 @@ const Home = () => {
             ↑
           </button>
         </div>
-      )}
+       )}
 
     </div>
   );
