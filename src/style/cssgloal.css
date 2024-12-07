@@ -1,0 +1,104 @@
+/* Animação de queda das estrelas */
+@keyframes star-fall {
+    0% {
+      transform: translateY(0) rotate(0deg); /* Inicia no topo e sem rotação */
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.5; /* Meio do caminho, a estrela fica mais transparente */
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg); /* Estrela desce e gira */
+      opacity: 0; /* Estrela desaparece ao final */
+    }
+  }
+  
+  .star-animation {
+    animation: star-fall linear infinite; /* Animação infinita e contínua */
+    position: absolute;
+  }
+  
+  /* Efeito de brilho suave */
+  .star-animation {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Um brilho suave ao redor da estrela */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 80%);
+    /* Deixa as estrelas com brilho suave no centro */
+  }
+  .anamation-card:hover {
+    transform: rotateY(10deg) rotateX(10deg); /* Inclina o card em 3D */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito de elevação */
+  }
+  .anamation-card{
+    perspective: 1000px; /* Define a perspectiva 3D */
+  }
+  /* General Text Styling */
+ /* Estilos gerais para o texto animado */
+.animated-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center; /* Alinha os textos ao centro */
+  position: relative; /* Para controlar a posição absoluta dos spans */
+  width: 100%; /* Largura total */
+  height: 1.5rem; /* Altura fixa para manter o espaço reservado */
+}
+
+/* Estilos para cada span */
+.animated-text span {
+  display: inline-block;
+  text-transform: uppercase;
+  animation: fade 8s linear infinite;
+  opacity: 0;
+  transform: translateY(30px); /* Começa abaixo do container */
+  position: absolute; /* Ambos os spans ficam sobrepostos */
+  font-size: 1.5rem; /* Tamanho de fonte base */
+  width: 100%; /* Garante que ocupe a mesma largura do container */
+}
+
+/* Controlando a animação dos spans */
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-text span:nth-child(2) {
+  animation-delay: 4s;
+}
+
+/* Keyframes da animação */
+@keyframes fade {
+  0%, 45% {
+    opacity: 0;
+    transform: translateY(-30px); /* Começa fora da tela */
+  }
+  50%, 95% {
+    opacity: 1;
+    transform: translateY(0); /* A frase aparece no centro */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px); /* A frase sai para baixo */
+  }
+}
+
+/* Responsividade para tamanhos menores */
+@media (max-width: 650px) {
+  .animated-text {
+    height: 3.5rem; /* Ajuste para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+   .title {
+    font-size: 1.25rem;
+  }
+  .animated-text span{
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 335px) {
+  .animated-text {
+    height: 6rem; 
+  }
+}
