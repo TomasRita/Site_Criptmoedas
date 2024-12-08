@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 // Configuração das rotas do React Router
 const router = createBrowserRouter([
   {
-    path: '/Site_criptmoedas/',
+    path: '/Site_Criptmoedas/',
     element: <App />, // A página principal da aplicação
     children: [
       {

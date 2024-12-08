@@ -5,7 +5,7 @@ const NotFoundPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleRedirect = () => {
-    navigate('/Site_criptmoedas/');
+    navigate('/Site_Criptmoedas/');
   };
 
   return (
