@@ -47,3 +47,6 @@ export default defineConfig({
 })
 
 ```
+## Equipa de Desenvolvimento
+- Front-end: Tomás Rita
+- Ui/ux: Wilson Brás
