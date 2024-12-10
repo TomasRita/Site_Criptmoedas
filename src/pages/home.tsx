@@ -167,7 +167,7 @@ const Home = () => {
 
         {/* Cristal azul no centro */}
         <motion.img
-          src={backgroundImageHeader} // Substitua pelo caminho correto da imagem do cristal
+          src={backgroundImageHeader} 
           alt="Crystal"
           className="w-full"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -292,10 +292,10 @@ const Home = () => {
                 key={index}
                 className={`bg-white/10 backdrop-blur-lg p-8 h-auto  xl:max-h-[70vh] w-auto md:w-80 rounded-lg border border-gray-500 shadow-xl flex flex-col items-center ${
                   index === 0
-                  ? "xl:my-8 my-0" // Abaixa a carta da posição 0
+                  ? "xl:my-8 my-0"
                   : index === 1
-                  ? "my-0" // Eleva a carta do meio
-                  : "xl:my-16 my-0" // Mantém a posição padrão da última carta
+                  ? "my-0"
+                  : "xl:my-16 my-0" 
               }`}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
